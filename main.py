@@ -10,14 +10,7 @@ root.geometry("295x250")
 pantalla = Entry(root, width=40, bg="black", fg="white", borderwidth=0, font=("arial", 18, "bold"))
 pantalla.grid(row=0, column=0, columnspan=100, padx=1, pady=1)
 
-# Funciones
-def get(int):
-    pantalla.insert(END,int)
-    
-def calcular():
-    resultado = eval(pantalla.get())
-    pantalla.delete(0,END)
-    pantalla.insert(END,resultado)
+
 
 
 # Configuración botones
